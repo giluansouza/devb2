@@ -25,71 +25,7 @@ export default function Home() {
   //       <div className="flex flex-col flex-1">
   //         <h1 className="text-2xl font-bold">Devboot.AI</h1>
   //         <p>Ferramentas desenvolvidas com Inteligência Artificial para impulsionar o sucesso do seu negócio!</p>
-  //         <div className="flex gap-4">
-  //           <Card className="w-[350px] hover:bg-red-600/10 ">
-  //               <CardHeader className="flex-1">
-  //                   <CardTitle>Upload.ai</CardTitle>
-  //               </CardHeader>
-  //               <CardContent className="flex-1">
-  //                   <CardDescription>Gerar título e descrição de vídeos para o YouTube.</CardDescription>
-  //               </CardContent>
-  //               <CardFooter className="flex-1">
-  //                 <span className="text-orange-500">Em breve</span>
-  //                 {/* <Button variant="outline">
-  //                     <Flower color="red" className="w-4 h-4 mr-2" />
-  //                     upload.ai
-  //                 </Button> */}
-  //               </CardFooter>
-  //           </Card>
 
-  //           <Card className="w-[350px] hover:bg-green-600/10">
-  //             <CardHeader>
-  //                 <CardTitle>Recognition.ai</CardTitle>
-  //             </CardHeader>
-  //             <CardContent>
-  //                 <CardDescription>Identifica conceitos em imagens.</CardDescription>
-  //             </CardContent>
-  //             <CardFooter>
-  //               <span className="text-orange-500">Em breve</span>
-  //             </CardFooter>
-  //           </Card>
-
-  //           <Card className="w-[350px] hover:bg-blue-600/10">
-  //             <CardHeader>
-  //                 <CardTitle>FaceDetection.ai</CardTitle>
-  //             </CardHeader>
-  //             <CardContent>
-  //                 <CardDescription>Identifica rostos humanos em imagens.</CardDescription>
-  //             </CardContent>
-  //             <CardFooter>
-  //               <span className="text-orange-500">Em breve</span>
-  //             </CardFooter>
-  //           </Card>
-
-  //           <Card className="w-[350px] hover:bg-blue-600/10">
-  //             <CardHeader>
-  //                 <CardTitle>Translation.ai</CardTitle>
-  //             </CardHeader>
-  //             <CardContent>
-  //                 <CardDescription>Traduza textos completos ou gere resumos traduzidos.</CardDescription>
-  //             </CardContent>
-  //             <CardFooter>
-  //               <span className="text-orange-500">Em breve</span>
-  //             </CardFooter>
-  //           </Card>
-
-  //           {/* <Card className="w-[350px] hover:bg-blue-600/10">
-  //             <CardHeader>
-  //                 <CardTitle>FaceDetection.ai</CardTitle>
-  //             </CardHeader>
-  //             <CardContent>
-  //                 <CardDescription>Identifica rostos humanos em imagens.</CardDescription>
-  //             </CardContent>
-  //             <CardFooter>
-  //               <span className="text-orange-500">Em breve</span>
-  //             </CardFooter>
-  //           </Card> */}
-  //         </div>
   //       </div>
   //     </main>
   //     <footer className="p-4 border-t">
@@ -103,11 +39,71 @@ export default function Home() {
     <Header />
 
       {/* Main */}
-      <main className="h-[calc(100vh-3rem)]">
+      <main className="min-h-[calc(100vh-3rem)]">
         {/* Section */}
-        <section className="h-full flex flex-col items-center justify-center">
+        <section className="h-[calc(100vh-3rem)] flex flex-col items-center justify-center">
           <h2 className="text-4xl font-bold">Hello everyone!</h2>
           <h2 className="text-2xl font-bold">FullStack Developer</h2>
+        </section>
+
+        <Separator />
+
+        <section className="flex flex-col items-center justify-center p-3">
+          <h1 className="text-2xl font-bold text-red-700">Devboot.AI</h1>
+          <p>Ferramentas desenvolvidas com Inteligência Artificial para impulsionar o sucesso do seu negócio!</p>
+          <div className="flex flex-wrap justify-center gap-4 py-3">
+            <Card className="flex flex-col w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 hover:bg-red-600/10 ">
+                <CardHeader>
+                    <CardTitle>Upload.ai</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-1">
+                    <CardDescription>Gerar título e descrição de vídeos para o YouTube.</CardDescription>
+                </CardContent>
+                <CardFooter>
+                  <span className="text-orange-500">Em breve</span>
+                  {/* <Button variant="outline">
+                      <Flower color="red" className="w-4 h-4 mr-2" />
+                      upload.ai
+                  </Button> */}
+                </CardFooter>
+            </Card>
+
+            <Card className="flex flex-col w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 hover:bg-red-600/10">
+              <CardHeader>
+                  <CardTitle>Recognition.ai</CardTitle>
+              </CardHeader>
+              <CardContent className="flex-1">
+                  <CardDescription>Identifica conceitos em imagens.</CardDescription>
+              </CardContent>
+              <CardFooter>
+                <span className="text-orange-500">Em breve</span>
+              </CardFooter>
+            </Card>
+
+            <Card className="flex flex-col w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 hover:bg-red-600/10">
+              <CardHeader>
+                  <CardTitle>FaceDetection.ai</CardTitle>
+              </CardHeader>
+              <CardContent className="flex-1">
+                  <CardDescription>Identifica rostos humanos em imagens.</CardDescription>
+              </CardContent>
+              <CardFooter>
+                <span className="text-orange-500">Em breve</span>
+              </CardFooter>
+            </Card>
+
+            <Card className="flex flex-col w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 hover:bg-red-600/10">
+              <CardHeader>
+                  <CardTitle>Translation.ai</CardTitle>
+              </CardHeader>
+              <CardContent className="flex-1">
+                  <CardDescription>Traduza textos completos ou gere resumos traduzidos.</CardDescription>
+              </CardContent>
+              <CardFooter>
+                <span className="text-orange-500">Em breve</span>
+              </CardFooter>
+            </Card>
+          </div>
         </section>
       </main>
 
