@@ -1,8 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Devboot | Giluan Souza',
@@ -15,8 +13,21 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-br">
+      <body>
+        {children}
+
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-7S88FJ2TWH"></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-7S88FJ2TWH');
+          `}
+        </Script>
+      </body>
     </html>
   )
 }
