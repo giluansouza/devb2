@@ -1,7 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import { Header } from '@/components/ui/header'
 import { Button } from "@/components/ui/button";
-import { Heart, LucideMap, Mail, Map, MapPinIcon } from "lucide-react";
+import { Map, Settings } from "lucide-react";
 import Particles from "@/components/particles";
 import { Card } from "@/components/card";
 import Link from "next/link";
@@ -13,12 +13,12 @@ const socials = [
 		label: "Mapa de calor",
 		handle: "Heatmap",
 	},
-	// {
-	// 	icon: <MapPinIcon size={20} />,
-	// 	href: "",
-	// 	label: "Geoprocessamento",
-	// 	handle: "Geoprocessing",
-	// },
+	{
+		icon: <Settings size={20} />,
+		href: "https://tools.devboot.com.br",
+		label: "Mapas e gráficos",
+		handle: "Tools",
+	},
 	// {
 	// 	icon: <Github size={20} />,
 	// 	href: "https://github.com/chronark",
