@@ -12,14 +12,14 @@ export const MainHeader = () => {
         {/* <div className="flex relative z-20 flex-col gap-6 w-full lg:w-1/2 xl:mt-10"> */}
           {/* <div className="text-center leading-8 md:leading-10"> */}
             {/* <div className="w-full text-center"> */}
-              <h1 className="tracking-tight inline font-semibold text-[2.1rem] text-center lg:text-5xl">Criamos sites, sistemas e apps&nbsp;</h1>
-              <h1 className="tracking-tight inline font-semibold text-[2.1rem] text-center from-[#FF1CF7] to-[#b249f8] lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b">incríveis&nbsp;</h1>
-              <h1 className="tracking-tight inline font-semibold text-[2.1rem] text-center lg:text-5xl">com as melhores&nbsp;</h1>
+              <h1 className="tracking-tight inline font-semibold text-[2.1rem] text-center lg:text-6xl">Criamos sites, sistemas e apps&nbsp;</h1>
+              <h1 className="tracking-tight inline font-semibold text-[2.1rem] text-center from-[#FF1CF7] to-[#b249f8] lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b">incríveis&nbsp;</h1>
+              <h1 className="tracking-tight inline font-semibold text-[2.1rem] text-center lg:text-6xl">com as melhores&nbsp;</h1>
               <h1 className="tracking-tight inline font-semibold text-[2.1rem] text-center from-[#6FEE8D] to-[#17c964] lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b">tecnologias.&nbsp;</h1>
             {/* </div> */}
           {/* </div> */}
           <h2 
-            className="w-full md:w-1/2 my-2 text-xl lg:text-xl font-semibold text-zinc-300 block max-w-full text-center">
+            className="w-full md:w-1/2 my-2 mt-5 text-xl lg:text-2xl font-semibold text-zinc-300 block max-w-full text-center mx-auto">
               Bonitos, rápidos e modernos.
           </h2>
         {/* </div> */}

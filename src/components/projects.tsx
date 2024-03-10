@@ -9,7 +9,7 @@ const projectsData = [
     title: "Nierla Joias",
     label: "Catálogo Digital Nierla Joias",
     handle: "Nierla Joias",
-    img: "http://localhost:3000/catalogo-digital-nierla-joias.png"
+    img: "https://devboot.com.br/catalogo-digital-nierla-joias.png"
   },
   {
     icon: "",
@@ -17,7 +17,7 @@ const projectsData = [
     title: "SIAGEO",
     label: "Sistema de Análise e Geoprocessamento de Ocorrências",
     handle: "Siageo",
-    img: "http://localhost:3000/siageo.png"
+    img: "https://devboot.com.br/siageo.png"
   },
   {
     icon: "http://localhost:3000/logo-sosmulher-jua.png",
@@ -25,7 +25,7 @@ const projectsData = [
     title: "SOSMulher Juá",
     label: "Aplicativo Android SOS Mulher Juá",
     handle: "SOS Mulher Juá",
-    img: "http://localhost:3000/app-sosmulherjua.jpg"
+    img: "https://devboot.com.br/app-sosmulherjua.jpg"
   },
   // {
   // 	icon: <Github size={20} />,
@@ -38,7 +38,7 @@ const projectsData = [
 export function Projects() {
   return (
     <section className="w-full flex flex-col items-center justify-center px-3 py-6">
-      <h1 className="text-2xl font-bold mb-4">Projects</h1>
+      <h1 className="text-2xl font-bold mb-8 lg:text-4xl">Alguns projetos</h1>
       <div className="max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-8">
         {projectsData.map((s) => (
           <Card 
