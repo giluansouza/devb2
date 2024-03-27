@@ -2,6 +2,7 @@
   "extends": "@rocketseat/eslint-config/next",
   "ignorePatterns": [
     "node_modules/**/*",
-    ".next/**/*"
+    ".next/**/*",
+    "src/components/ui/**/*"
   ]
 }
