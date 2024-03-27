@@ -1,31 +1,31 @@
 'use client'
 
-import { Button, Card, CardFooter, CardHeader, Image } from "@nextui-org/react"
+import { Button, Card, CardFooter, Image } from '@nextui-org/react'
 
 const projectsData = [
   {
-    icon: "http://localhost:3000/logo-nierla.png",
-    href: "https://nierlajoias.devboot.com.br",
-    title: "Nierla Joias",
-    label: "Catálogo Digital Nierla Joias",
-    handle: "Nierla Joias",
-    img: "https://devboot.com.br/catalogo-digital-nierla-joias.png"
+    icon: 'http://localhost:3000/logo-nierla.png',
+    href: 'https://nierlajoias.devboot.com.br',
+    title: 'Nierla Joias',
+    label: 'Catálogo Digital Nierla Joias',
+    handle: 'Nierla Joias',
+    img: 'https://devboot.com.br/catalogo-digital-nierla-joias.png',
   },
   {
-    icon: "",
-    href: "#",
-    title: "SIAGEO",
-    label: "Sistema de Análise e Geoprocessamento de Ocorrências",
-    handle: "Siageo",
-    img: "https://devboot.com.br/siageo.png"
+    icon: '',
+    href: '#',
+    title: 'SIAGEO',
+    label: 'Sistema de Análise e Geoprocessamento de Ocorrências',
+    handle: 'Siageo',
+    img: 'https://devboot.com.br/siageo.png',
   },
   {
-    icon: "http://localhost:3000/logo-sosmulher-jua.png",
-    href: "https://play.google.com/store/apps/details?id=com.devboot.sosmulherjua",
-    title: "SOSMulher Juá",
-    label: "Aplicativo Android SOS Mulher Juá",
-    handle: "SOS Mulher Juá",
-    img: "https://devboot.com.br/app-sosmulherjua.jpg"
+    icon: 'http://localhost:3000/logo-sosmulher-jua.png',
+    href: 'https://play.google.com/store/apps/details?id=com.devboot.sosmulherjua',
+    title: 'SOSMulher Juá',
+    label: 'Aplicativo Android SOS Mulher Juá',
+    handle: 'SOS Mulher Juá',
+    img: 'https://devboot.com.br/app-sosmulherjua.jpg',
   },
   // {
   // 	icon: <Github size={20} />,
@@ -33,7 +33,7 @@ const projectsData = [
   // 	label: "Github",
   // 	handle: "chronark",
   // },
-];
+]
 
 export function Projects() {
   return (
@@ -41,8 +41,8 @@ export function Projects() {
       <h1 className="text-2xl font-bold mb-8 lg:text-4xl">Alguns projetos</h1>
       <div className="max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-8">
         {projectsData.map((s) => (
-          <Card 
-            key={s.handle} 
+          <Card
+            key={s.handle}
             isFooterBlurred
             className="w-[280px] h-[160px] lg:w-[400px] lg:h-[280px] bg-black/70"
             shadow="sm"
@@ -71,7 +71,7 @@ export function Projects() {
               </div>
               <a href={s.href} target="_blank" rel="noreferrer">
                 <Button radius="full" size="sm">
-                    App
+                  App
                 </Button>
               </a>
             </CardFooter>

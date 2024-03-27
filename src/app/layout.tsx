@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import { Providers } from './providers'
+import { Toaster } from '@/components/ui/toaster'
 
 export const metadata: Metadata = {
   title: 'Devboot | Giluan Souza',
@@ -16,11 +17,13 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className="w-full h-full bg-background font-sans antialiased">
-        <Providers>
-          {children}
-        </Providers>
+        <Providers>{children}</Providers>
+        <Toaster />
 
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-7S88FJ2TWH"></Script>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-7S88FJ2TWH"
+        ></Script>
         <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
