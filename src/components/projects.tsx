@@ -4,7 +4,7 @@ import { Button, Card, CardFooter, Image } from '@nextui-org/react'
 
 const projectsData = [
   {
-    icon: 'http://localhost:3000/logo-nierla.png',
+    icon: 'https://devboot.com.br/logo-nierla.png',
     href: 'https://nierlajoias.devboot.com.br',
     title: 'Nierla Joias',
     label: 'Catálogo Digital Nierla Joias',
@@ -20,7 +20,7 @@ const projectsData = [
     img: 'https://devboot.com.br/siageo.png',
   },
   {
-    icon: 'http://localhost:3000/logo-sosmulher-jua.png',
+    icon: 'https://devboot.com.br/logo-sosmulher-jua.png',
     href: 'https://play.google.com/store/apps/details?id=com.devboot.sosmulherjua',
     title: 'SOSMulher Juá',
     label: 'Aplicativo Android SOS Mulher Juá',
