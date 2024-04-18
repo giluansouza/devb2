@@ -7,23 +7,23 @@ import logoReact from '@/assets/react.png'
 export const MainHeader = () => {
   return (
     <main className="w-full flex flex-col items-center justify-between gap-8 px-2">
-      <section className="max-w-7xl flex-1 flex flex-col justify-center py-8 px-4">
+      <section className="max-w-7xl flex-1 flex flex-col justify-center py-8 px-4r">
         <h1 className="tracking-tight inline font-semibold text-[2.1rem] text-center lg:text-6xl">
-          Criamos sites, sistemas e apps&nbsp;
+          Construímos experiências digitais &nbsp;
         </h1>
-        <h1 className="tracking-tight inline font-semibold text-[2.1rem] text-center from-[#FF1CF7] to-[#b249f8] lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b">
-          incríveis&nbsp;
+        <h1 className="tracking-tight inline font-bold text-[2.1rem] text-center from-[#FF1CF7] to-[#b249f8] lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b">
+          excepcionais&nbsp;
         </h1>
         <h1 className="tracking-tight inline font-semibold text-[2.1rem] text-center lg:text-6xl">
           com as melhores&nbsp;
         </h1>
-        <h1 className="tracking-tight inline font-semibold text-[2.1rem] text-center from-[#6FEE8D] to-[#17c964] lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b">
+        <h1 className="tracking-tight inline font-bold text-[2.1rem] text-center from-[#6FEE8D] to-[#17c964] lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b">
           tecnologias.&nbsp;
         </h1>
         {/* </div> */}
         {/* </div> */}
         <h2 className="w-full md:w-1/2 my-2 mt-5 text-xl lg:text-2xl font-semibold text-zinc-300 block max-w-full text-center mx-auto">
-          Bonitos, rápidos e modernos.
+          Sites, sistemas e app mobiles.
         </h2>
         {/* </div> */}
       </section>

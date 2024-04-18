@@ -30,12 +30,12 @@ export default function Home() {
         <Projects />
 
         <Contact />
+        <footer className="w-full pt-4 p-2 flex items-end justify-center mt-4">
+          <span className="text-sm">
+            2024 &copy; Todos os direitos reservados.
+          </span>
+        </footer>
       </div>
-      <footer className="w-full pt-4 p-2 flex items-end justify-center mt-4">
-        <span className="text-sm">
-          2024 &copy; Todos os direitos reservados.
-        </span>
-      </footer>
     </div>
   )
 }
