@@ -29,8 +29,8 @@ export const MainHeader = () => {
       </section>
 
       <section className="flex flex-col gap-2 mb-8">
-        <div className="flex flex-wrap justify-center gap-4">
-          <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-col items-center justify-center rounded-full shadow-xl border bg-zinc-400/20 border-zinc-800 p-2">
             <Image
               alt="Logomarca do php"
               src={logoPhp}
@@ -40,7 +40,7 @@ export const MainHeader = () => {
             />
             <span>PHP</span>
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center rounded-full shadow-xl border bg-zinc-400/20 border-zinc-800 p-2">
             <Image
               alt="Logomarca do node"
               src={logoNode}
@@ -49,27 +49,27 @@ export const MainHeader = () => {
             />
             <span>NodeJS</span>
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center rounded-full shadow-xl border bg-zinc-400/20 border-zinc-800 p-2">
             <Image
               alt="Logomarca do react"
               src={logoReact}
               width={60}
               height={60}
             />
-            <span>ReactJS</span>
+            <span>React</span>
           </div>
           {/* <div className="flex flex-col items-center justify-center">
             <Image alt="Logomarca do python" src={logoPython} width={60} height={60} />
             <span>Python</span>
           </div> */}
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center rounded-full shadow-xl border bg-zinc-400/20 border-zinc-800 p-2">
             <Image
               alt="Logomarca do reactJS"
               src={logoReact}
               width={60}
               height={60}
             />
-            <span>React Native</span>
+            <span>Native</span>
           </div>
         </div>
       </section>

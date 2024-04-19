@@ -83,9 +83,10 @@ export function Contact() {
           onChange={(e) => setMessage(e.target.value)}
         />
         <Button
-          className="mt-4 px-8 py-3 text-xl text-white rounded-full bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500"
+          className="mt-4 px-8 py-3 text-xl text-white rounded-full bg-gradient-to-t from-red-500 to-red-800"
           type="submit"
           disabled={isSubmitting}
+          variant="shadow"
         >
           Enviar
         </Button>

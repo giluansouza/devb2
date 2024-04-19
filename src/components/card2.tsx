@@ -1,52 +1,36 @@
-import { Card, CardFooter, Button } from '@nextui-org/react'
-import Image from 'next/image'
 import React from 'react'
+import { Card, CardHeader, CardBody, Image } from '@nextui-org/react'
+import Link from 'next/link'
 
-interface PropsWithChildren {
-  icon: string
+interface Card2Props {
   href: string
   title: string
   label: string
-  handle: string
   img: string
+  stacks: string
 }
 
-export const Card2: React.FC<PropsWithChildren> = ({
-  icon,
-  href,
-  title,
-  label,
-  handle,
-  img,
-}) => {
+export function Card2({ href, title, label, img, stacks }: Card2Props) {
   return (
-    <Card
-      isFooterBlurred
-      radius="lg"
-      className="w-[320px] h-[213px] border-none"
-    >
-      <Image
-        alt={title}
-        src={img}
-        quality={100}
-        fill
-        sizes="100vw"
-        style={{
-          objectFit: 'cover',
-        }}
-      />
-      <CardFooter className="justify-between before:bg-black/40 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-        <p className="font-bold text-lg text-black/80">{title}</p>
-        <Button
-          className="text-tiny text-white bg-black/20"
-          variant="flat"
-          color="default"
-          radius="lg"
-          size="sm"
-        >
-          App
-        </Button>
-      </CardFooter>
+    <Card className="w-[300px] md:w-[320px] py-4 bg-zinc-800/90 border border-zinc-600 shadow-lg">
+      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+        <p className="text-tiny uppercase font-bold">{title}</p>
+        <small className="text-default-500">
+          {label.length > 20 ? `${label.substring(0, 35)}...` : label}
+        </small>
+        <h4 className="font-bold text-large">{stacks}</h4>
+      </CardHeader>
+      <CardBody className="overflow-visible py-2">
+        <Link href={href} target="_blank">
+          <Image
+            isZoomed
+            alt="Card background"
+            className="object-cover rounded-xl"
+            src={img}
+            sizes="100vw"
+          />
+        </Link>
+      </CardBody>
     </Card>
   )
 }
