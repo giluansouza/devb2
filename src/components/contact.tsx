@@ -2,7 +2,6 @@
 
 import { useState, FormEvent } from 'react'
 import { toast } from '@/components/ui/use-toast'
-import { Button } from '@nextui-org/react'
 
 export function Contact() {
   const [nome, setNome] = useState('')
@@ -54,7 +53,7 @@ export function Contact() {
         className="w-full max-w-3xl flex flex-col gap-4"
       >
         <input
-          className="px-4 py-2 rounded-full text-zinc-3 shadow-xl bg-zinc-700 focus:outline-none"
+          className="px-4 py-2 rounded-full text-zinc-3 shadow-xl bg-zinc-700 border border-zinc-600 focus:outline-none"
           type="text"
           name="name"
           placeholder="Nome"
@@ -62,34 +61,33 @@ export function Contact() {
           onChange={(e) => setNome(e.target.value)}
         />
         <input
-          className="px-4 py-2 rounded-full text-zinc-3 shadow-xl bg-zinc-700 focus:outline-none"
+          className="px-4 py-2 rounded-full text-zinc-3 shadow-xl bg-zinc-700 border border-zinc-600 focus:outline-none"
           name="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
-          className="px-4 py-2 rounded-full text-zinc-3 shadow-xl bg-zinc-700 focus:outline-none"
+          className="px-4 py-2 rounded-full text-zinc-3 shadow-xl bg-zinc-700 border border-zinc-600 focus:outline-none"
           name="phone"
           placeholder="Telefone"
           value={phone}
           onChange={(e) => setPhone(e.currentTarget.value)}
         />
         <textarea
-          className="px-4 py-2 rounded-full text-zinc-3 shadow-xl bg-zinc-700 focus:outline-none"
+          className="px-4 py-2 rounded-full text-zinc-3 shadow-xl bg-zinc-700 border border-zinc-600 focus:outline-none"
           placeholder="Mensagem"
           name="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <Button
+        <button
           className="mt-4 px-8 py-3 text-xl text-white rounded-full bg-gradient-to-t from-red-500 to-red-800"
           type="submit"
           disabled={isSubmitting}
-          variant="shadow"
         >
           Enviar
-        </Button>
+        </button>
       </form>
     </section>
   )

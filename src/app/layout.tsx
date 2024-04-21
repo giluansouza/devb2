@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import Script from 'next/script'
-import { Providers } from './providers'
+// import { Providers } from './providers'
 import { Toaster } from '@/components/ui/toaster'
 
 export const metadata: Metadata = {
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className="w-full h-full bg-background font-sans antialiased">
-        <Providers>{children}</Providers>
+        {children}
         <Toaster />
 
         <Script

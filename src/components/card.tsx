@@ -1,40 +1,56 @@
-'use client'
-import { motion, useMotionTemplate, useSpring } from 'framer-motion'
+import * as React from 'react'
+import { styled } from '@mui/material/styles'
+import Card from '@mui/material/Card'
+import CardHeader from '@mui/material/CardHeader'
+import CardMedia from '@mui/material/CardMedia'
+import Avatar from '@mui/material/Avatar'
+import IconButton from '@mui/material/IconButton'
+import { red } from '@mui/material/colors'
 
-import { PropsWithChildren } from 'react'
+interface Card2Props {
+  href: string
+  title: string
+  label: string
+  img: string
+  stacks: string
+}
 
-export const Card: React.FC<PropsWithChildren> = ({ children }) => {
-  const mouseX = useSpring(0, { stiffness: 500, damping: 100 })
-  const mouseY = useSpring(0, { stiffness: 500, damping: 100 })
-
-  function onMouseMove(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-    const { currentTarget, clientX, clientY } = event
-
-    const { left, top } = currentTarget.getBoundingClientRect()
-    mouseX.set(clientX - left)
-    mouseY.set(clientY - top)
-  }
-  const maskImage = useMotionTemplate`radial-gradient(240px at ${mouseX}px ${mouseY}px, white, transparent)`
-  const style = { maskImage, WebkitMaskImage: maskImage }
-
+export default function ProjectCard({
+  href,
+  title,
+  label,
+  img,
+  stacks,
+}: Card2Props) {
   return (
-    <div
-      onMouseMove={onMouseMove}
-      className="flex-1 overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-800/10 group md:gap-4 hover:border-zinc-400/50 border-zinc-600 "
+    <Card
+      sx={{ maxWidth: 345 }}
+      className="bg-zinc-800/90 border border-zinc-600 shadow-lg rounded-xl text-white"
     >
-      <div className="pointer-events-none">
-        <div className="absolute inset-0 z-0  transition duration-1000 [mask-image:linear-gradient(black,transparent)]" />
-        <motion.div
-          className="absolute inset-0 z-10  bg-gradient-to-br opacity-100  via-zinc-100/10  transition duration-1000 group-hover:opacity-50 "
-          style={style}
-        />
-        <motion.div
-          className="absolute inset-0 z-10 opacity-0 mix-blend-overlay transition duration-1000 group-hover:opacity-100"
-          style={style}
-        />
-      </div>
-
-      {children}
-    </div>
+      <CardHeader
+        avatar={
+          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+            R
+          </Avatar>
+        }
+        action={<IconButton aria-label="settings">A</IconButton>}
+        title={title}
+        subheader={stacks}
+      />
+      <CardMedia
+        component="img"
+        height="194"
+        image={img}
+        alt="Paella dish"
+        className="rounded-b-xl"
+      />
+      {/* <CardContent>
+        <Typography variant="body2" color="text.secondary">
+          This impressive paella is a perfect party dish and a fun meal to cook
+          together with your guests. Add 1 cup of frozen peas along with the
+          mussels, if you like.
+        </Typography>
+      </CardContent> */}
+    </Card>
   )
 }

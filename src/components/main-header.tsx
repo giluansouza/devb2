@@ -30,7 +30,7 @@ export const MainHeader = () => {
 
       <section className="flex flex-col gap-2 mb-8">
         <div className="flex flex-wrap justify-center gap-3">
-          <div className="flex flex-col items-center justify-center rounded-full shadow-xl border bg-zinc-400/20 border-zinc-800 p-2">
+          <div className="flex flex-col items-center justify-center rounded-full shadow-xl bg-zinc-400/20 border border-zinc-600 p-2">
             <Image
               alt="Logomarca do php"
               src={logoPhp}
@@ -40,7 +40,7 @@ export const MainHeader = () => {
             />
             <span>PHP</span>
           </div>
-          <div className="flex flex-col items-center justify-center rounded-full shadow-xl border bg-zinc-400/20 border-zinc-800 p-2">
+          <div className="flex flex-col items-center justify-center rounded-full shadow-xl bg-zinc-400/20 border border-zinc-600 p-2">
             <Image
               alt="Logomarca do node"
               src={logoNode}
@@ -49,7 +49,7 @@ export const MainHeader = () => {
             />
             <span>NodeJS</span>
           </div>
-          <div className="flex flex-col items-center justify-center rounded-full shadow-xl border bg-zinc-400/20 border-zinc-800 p-2">
+          <div className="flex flex-col items-center justify-center rounded-full shadow-xl bg-zinc-400/20 border border-zinc-600 p-2">
             <Image
               alt="Logomarca do react"
               src={logoReact}
@@ -62,7 +62,7 @@ export const MainHeader = () => {
             <Image alt="Logomarca do python" src={logoPython} width={60} height={60} />
             <span>Python</span>
           </div> */}
-          <div className="flex flex-col items-center justify-center rounded-full shadow-xl border bg-zinc-400/20 border-zinc-800 p-2">
+          <div className="flex flex-col items-center justify-center rounded-full shadow-xl bg-zinc-400/20 border border-zinc-600 p-2">
             <Image
               alt="Logomarca do reactJS"
               src={logoReact}

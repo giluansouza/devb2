@@ -1,6 +1,6 @@
 'use client'
 
-import { Card2 } from './card2'
+import ProjectCard from './card'
 
 const projectsData = [
   {
@@ -38,7 +38,7 @@ export function Projects() {
       <h1 className="text-2xl font-bold mb-8 lg:text-4xl">Alguns projetos</h1>
       <div className="max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-8">
         {projectsData.map((s) => (
-          <Card2
+          <ProjectCard
             key={s.handle}
             href={s.href}
             title={s.title}
