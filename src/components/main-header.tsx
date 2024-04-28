@@ -8,18 +8,20 @@ export const MainHeader = () => {
   return (
     <main className="w-full flex flex-col items-center justify-between gap-8 px-2">
       <section className="max-w-7xl flex-1 flex flex-col justify-center py-8 px-4r">
-        <h1 className="tracking-tight inline font-semibold text-[2.1rem] text-center lg:text-6xl">
-          Construímos experiências digitais &nbsp;
-        </h1>
-        <h1 className="tracking-tight inline font-bold text-[2.1rem] text-center from-[#FF1CF7] to-[#b249f8] lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b">
-          excepcionais&nbsp;
-        </h1>
-        <h1 className="tracking-tight inline font-semibold text-[2.1rem] text-center lg:text-6xl">
-          com as melhores&nbsp;
-        </h1>
-        <h1 className="tracking-tight inline font-bold text-[2.1rem] text-center from-[#6FEE8D] to-[#17c964] lg:text-6xl bg-clip-text text-transparent bg-gradient-to-b">
-          tecnologias.&nbsp;
-        </h1>
+        <div className="w-full flex flex-col">
+          <h1 className="tracking-tight inline-block font-extrabold text-[2.1rem] text-center lg:text-7xl lg:leading-tight">
+            Construímos experiências digitais &nbsp;
+          </h1>
+          <h1 className="tracking-tight font-extrabold text-[2.1rem] leading-8 text-center from-[#FF1CF7] to-[#b249f8] lg:text-7xl lg:leading-tight bg-clip-text text-transparent bg-gradient-to-b">
+            excepcionais&nbsp;
+          </h1>
+          <h1 className="tracking-tight inline font-extrabold text-[2.1rem] text-center lg:text-7xl lg:leading-tight">
+            com as melhores&nbsp;
+          </h1>
+          <h1 className="tracking-tight inline font-extrabold text-[2.1rem] text-center from-orange-600 to-yellow-500 lg:text-7xl lg:leading-tight bg-clip-text text-transparent bg-gradient-to-b">
+            tecnologias.&nbsp;
+          </h1>
+        </div>
         {/* </div> */}
         {/* </div> */}
         <h2 className="w-full md:w-1/2 my-2 mt-5 text-xl lg:text-2xl font-semibold text-zinc-300 block max-w-full text-center mx-auto">

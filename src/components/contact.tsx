@@ -82,7 +82,7 @@ export function Contact() {
           onChange={(e) => setMessage(e.target.value)}
         />
         <button
-          className="mt-4 px-8 py-3 text-xl text-white rounded-full bg-gradient-to-t from-red-500 to-red-800"
+          className="mt-4 px-8 py-3 text-xl text-white rounded-full bg-red-500 hover:bg-red-600 focus:outline-none"
           type="submit"
           disabled={isSubmitting}
         >

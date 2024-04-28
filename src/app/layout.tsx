@@ -1,12 +1,18 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import { Roboto } from 'next/font/google'
 // import { Providers } from './providers'
 import { Toaster } from '@/components/ui/toaster'
 
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
+
 export const metadata: Metadata = {
   title: 'Devboot | Giluan Souza',
-  description: 'Caixa de ferramentas',
+  description: 'Desenvolvedor Fullstack web e mobile',
 }
 
 export default function RootLayout({
@@ -15,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" className={roboto.className}>
       <body className="w-full h-full bg-background font-sans antialiased">
         {children}
         <Toaster />

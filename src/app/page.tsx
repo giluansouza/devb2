@@ -6,14 +6,16 @@ import { Contact } from '@/components/contact'
 
 export default function Home() {
   return (
-    <div className="w-full h-full flex flex-col box-border">
-      <div className="w-full min-h-screen bg-gradient-to-br from-red-900/50 via-black to-blue-900/40">
-        <Header />
-        <MainHeader />
+    <div className="w-full min-h-screen flex flex-col box-border">
+      <div className="w-full bg-gradient-to-b from-red-600 via-black to-black">
+        <div className="max-w-7xl mx-auto">
+          <Header />
+          <MainHeader />
+        </div>
       </div>
 
-      <div className="bg-gradient-to-bl from-blue-900/40 via-black to-red-900/40">
-        <section className="flex flex-col items-center justify-center px-3 py-6">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col items-center justify-center px-3 py-6">
           <h1 className="text-2xl font-bold mb-8 lg:text-4xl">Sobre</h1>
           <div className="flex flex-wrap justify-center gap-4 py-3">
             <p className="w-full lg:w-3/5 text-center text-muted-foreground">
@@ -25,7 +27,7 @@ export default function Home() {
               disponíveis.
             </p>
           </div>
-        </section>
+        </div>
 
         <Projects />
 
